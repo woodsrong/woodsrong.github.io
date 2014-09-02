@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>微博</title>
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript"
+                charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="wb_follow_btn"></div>
+    </body>
+    <script>
+        WB2.anyWhere(function (W) {
+            W.widget.followButton({
+                'nick_name': '戊子',  //用户昵称
+                'id': "wb_follow_btn",
+                'show_head': true, //是否显示头像
+                'show_name': true, //是否显示名称
+                'show_cancel': true //是否显示取消关注按钮
+            });
+        });
+    </script>
+</html>
